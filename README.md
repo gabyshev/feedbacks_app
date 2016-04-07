@@ -25,5 +25,4 @@ Run:
 
 ### Improvements
 - Process email in background
-- Add integration tests
 - Design :)
