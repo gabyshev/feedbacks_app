@@ -7,7 +7,7 @@ class FeedbacksController < ApplicationController
   def create
     @feedback = Feedback.new(feedback_params)
     if @feedback.valid?
-      FeedbackServiceMailer.new_feedback(@feedback.name, @feedback.message).deliver_later
+      FeedbackServiceMailer.new_feedback(@feedback).deliver_later
       redirect_to root_url, notice: 'Thanks for your feedback!'
     else
       render :index, status: 400
