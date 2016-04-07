@@ -11,9 +11,19 @@ Simple Feedbacks application with user registration
 - Feedback's parameters `:name, :message` are necessary
 - Send email if feedback is valid
 
+### Quick Start
+
+```
+bundle install
+rails s
+```
 
 ### Tests
-
 Run:
 
 `rake spec`
+
+### Improvements
+- Process email in background
+- Add integration tests
+- Design :)
