@@ -1,0 +1,14 @@
+<div class="control_bar">
+  <% if user_signed_in? %>
+    <p>
+      <span>Logged in as: <strong><%= current_user.name %></strong></span>
+    </p>
+    <p>
+      <span><%= link_to 'Logout', destroy_user_session_path, method: :delete %></span>
+    </p>
+  <% else %>
+    <p>
+      <span><%= link_to 'Login', new_user_session_path %></span>
+    </p>
+  <% end %>
+</div>
